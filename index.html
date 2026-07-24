@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小光陪你写爬虫（体验版·前3课）</title>
+<link rel="stylesheet" href="css/style.css?v=20260725n">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🕷️ <span id="course-title">小光陪你写爬虫（体验版·前3课）</span></div>
+  <div class="progress-wrap">
+    <span id="progress-text">进度 0%</span>
+  </div>
+  <button class="parent-btn" id="parent-btn" title="家长面板">👨‍👩‍👧</button>
+</header>
+
+<!-- 首页：卡片式闯关地图 -->
+<main id="home-view" class="home-view"></main>
+
+<!-- 学习页：视频 + 讲义 + 练习 -->
+<section id="lesson-view" class="lesson-view" style="display:none"></section>
+
+<div class="toast" id="toast"></div>
+
+<!-- 一键向上 / 向下 悬浮按钮 -->
+<div class="scroll-fab" id="scroll-fab">
+  <button class="fab-btn" id="fab-up" title="一键向上（回到顶部）" aria-label="一键向上">↑</button>
+  <button class="fab-btn" id="fab-down" title="一键向下（到底部）" aria-label="一键向下">↓</button>
+</div>
+
+<!-- 家长验证 / 家长面板弹窗 -->
+<div class="modal-mask" id="modal-mask" style="display:none">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script src="data/course.js?v=20260725m"></script>
+<script src="js/cover_icons.js?v=20260721a"></script>
+<script src="data/vocab-words.js?v=20260725m"></script>
+<script src="data/audio.js?v=20260725m"></script>
+<script src="data/talk.js?v=20260725o"></script>
+<script src="data/words.js?v=20260725m"></script>
+<script src="js/vocab.js?v=20260719m"></script>
+<script src="js/figures.js?v=20260719m"></script>
+<script src="js/figures_crawler.js?v=20260725m"></script>
+<script src="js/markdown.js?v=20260719m"></script>
+<script src="vendor/skulpt/skulpt.min.js?v=20260719m"></script>
+<script src="vendor/skulpt/skulpt-stdlib.js?v=20260719m"></script>
+<script src="data/code_practice.js?v=20260725n"></script>
+<script src="libs/jsrsasign.min.js?v=20260720a"></script>
+<script src="js/app.js?v=20260725o"></script>
+<script src="js/music_player.js?v=20260725m"></script>
+</body>
+</html>
