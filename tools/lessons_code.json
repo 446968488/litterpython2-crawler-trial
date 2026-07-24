@@ -1,0 +1,310 @@
+[
+  {
+    "id": "py1",
+    "chTitle": "学前小课：Python 是什么",
+    "title": "Python 的起源与未来",
+    "code": "",
+    "takeaway": "你了解了：Python 是 1991 年诞生的最流行编程语言，能建网站、做 AI、分析数据，而且语法简单最适合初学者。"
+  },
+  {
+    "id": "py2",
+    "chTitle": "学前小课：Python 是什么",
+    "title": "出发前，先看这张路线图",
+    "code": "",
+    "takeaway": "你了解了：这趟旅程从思维热身一路闯到做小游戏，每节课看视频、读讲义、做练习、听小光讲一讲，闯关收集勋章；爸爸妈妈也能用解锁、报告、语音风格陪着你。"
+  },
+  {
+    "id": "c0l1",
+    "chTitle": "第0章 思维热身",
+    "title": "什么是程序",
+    "code": "",
+    "takeaway": "你学会了：程序就是给电脑的一张步骤清单，一步一步照着做。"
+  },
+  {
+    "id": "c0l2",
+    "chTitle": "第0章 思维热身",
+    "title": "顺序不能乱",
+    "code": "",
+    "takeaway": "你学会了：步骤的顺序很重要，顺序不对结果就乱。"
+  },
+  {
+    "id": "c0l3",
+    "chTitle": "第0章 思维热身",
+    "title": "循环真省力",
+    "code": "",
+    "takeaway": "你学会了：循环就是让电脑重复做同一件事，省时省力。"
+  },
+  {
+    "id": "c1l1",
+    "chTitle": "第1章 初识 Python",
+    "title": "第一个程序：让电脑说话",
+    "code": "print(\"你好\")\nprint(\"我是小程序员\")\nname = \"小光\"\nprint(\"你好，\" + name)",
+    "takeaway": "你学会了：用 print 加引号，就能让电脑说出你想说的话。"
+  },
+  {
+    "id": "c1l2",
+    "chTitle": "第1章 初识 Python",
+    "title": "电脑会算数",
+    "code": "print(3 + 4)\nprint(10 - 2)\nprint(5 * 6)\nprint(20 / 4)",
+    "takeaway": "你学会了：加+减-乘*除/，Python 是个超快计算器。"
+  },
+  {
+    "id": "c1l3",
+    "chTitle": "第1章 初识 Python",
+    "title": "注释与关键词",
+    "code": "# 这是一行注释\nprint(\"你好\")  # 后面也可以写注释\n# print(\"这句不会显示\")",
+    "takeaway": "你学会了：用 # 写注释给程序加小纸条，关键词是电脑的专用词。"
+  },
+  {
+    "id": "c2l1",
+    "chTitle": "第2章 变量与数据",
+    "title": "变量：给东西起名字",
+    "code": "name = \"小光\"\nage = 7\nprint(name)\nprint(\"我今年\", age, \"岁\")",
+    "takeaway": "你学会了：变量就是贴了名字的盒子，用来存东西。"
+  },
+  {
+    "id": "c2l2",
+    "chTitle": "第2章 变量与数据",
+    "title": "数据类型",
+    "code": "n = 7\nword = \"你好\"\nisSunny = True\nprint(n, word, isSunny)",
+    "takeaway": "你学会了：数字、文字、真假是三种常见数据类型。"
+  },
+  {
+    "id": "c2l3",
+    "chTitle": "第2章 变量与数据",
+    "title": "让电脑提问：input",
+    "code": "age = input(\"你几岁？\")\nprint(\"你\", age, \"岁啦\")",
+    "takeaway": "你学会了：用 input 让电脑提问，你的回答会被存起来。"
+  },
+  {
+    "id": "c2l4",
+    "chTitle": "第2章 变量与数据",
+    "title": "字符串：文字的魔法",
+    "code": "name = \"小光\"\nprint(\"我叫\" + name)\nprint(\"大写：\" + name.upper())\nprint(\"字数：\" + str(len(name)))\nprint(f\"欢迎你，{name}！\")",
+    "takeaway": "你学会了：字符串能量长度、切片、变大小写、用 f-string 拼句子、拆成列表。"
+  },
+  {
+    "id": "c3l1",
+    "chTitle": "第3章 海龟画图",
+    "title": "海龟来了",
+    "code": "forward(100)\nleft(90)\nforward(100)",
+    "takeaway": "你学会了：用 forward/back/left/right 指挥小海龟走路。"
+  },
+  {
+    "id": "c3l2",
+    "chTitle": "第3章 海龟画图",
+    "title": "画一个图形",
+    "code": "for i in range(4):\n    forward(100)\n    left(90)",
+    "takeaway": "你学会了：把前进和转向组合起来，就能画出正方形。"
+  },
+  {
+    "id": "c3l3",
+    "chTitle": "第3章 海龟画图",
+    "title": "用循环画漂亮的图案",
+    "code": "for i in range(8):\n    forward(80)\n    left(45)",
+    "takeaway": "你学会了：循环加海龟，能画出一朵花这样的漂亮图案。"
+  },
+  {
+    "id": "c4l1",
+    "chTitle": "第4章 流程控制",
+    "title": "if：做决定",
+    "code": "weather = \"下雨\"\nif weather == \"下雨\":\n    print(\"带伞\")",
+    "takeaway": "你学会了：用 if 让电脑\"如果……就……\"做决定。"
+  },
+  {
+    "id": "c4l2",
+    "chTitle": "第4章 流程控制",
+    "title": "if-else 与 elif",
+    "code": "score = 85\nif score >= 60:\n    print(\"及格啦\")\nelse:\n    print(\"再加油\")",
+    "takeaway": "你学会了：if 做对的、else 做否则的，elif 加更多分支。"
+  },
+  {
+    "id": "c4l3",
+    "chTitle": "第4章 流程控制",
+    "title": "for：按顺序数数",
+    "code": "for i in range(5):\n    print(\"第\", i, \"次\")",
+    "takeaway": "你学会了：用 for 和 range 把一件事自动重复 N 次。"
+  },
+  {
+    "id": "c4l4",
+    "chTitle": "第4章 流程控制",
+    "title": "while 与 break、continue",
+    "code": "n = 0\nwhile n < 5:\n    n = n + 1\n    if n == 3:\n        continue\n    print(n)",
+    "takeaway": "你学会了：while 一直做，break 跳出、continue 跳过。"
+  },
+  {
+    "id": "c4l5",
+    "chTitle": "第4章 流程控制",
+    "title": "布尔与逻辑：把条件连起来",
+    "code": "age = 8\nif age > 6 and age < 12:\n    print(\"你是小学生\")\nif age < 3 or age > 60:\n    print(\"需要特别照顾\")\nif not (age > 100):\n    print(\"还是年轻人\")",
+    "takeaway": "你学会了：用 and / or / not 把多个条件连起来做复杂判断。"
+  },
+  {
+    "id": "c5l1",
+    "chTitle": "第5章 数据结构",
+    "title": "列表：一排格子",
+    "code": "fruits = [\"苹果\", \"香蕉\", \"葡萄\"]\nprint(fruits[0])\nprint(fruits[1])",
+    "takeaway": "你学会了：列表是一排编了号的格子，用编号取里面的东西。"
+  },
+  {
+    "id": "c5l2",
+    "chTitle": "第5章 数据结构",
+    "title": "列表进阶：增删与排序",
+    "code": "fruits = [\"香蕉\", \"苹果\", \"葡萄\"]\nfruits.append(\"西瓜\")\nfruits.sort()\nprint(fruits)",
+    "takeaway": "你学会了：列表能追加、数长度、切片、排序。"
+  },
+  {
+    "id": "c5l3",
+    "chTitle": "第5章 数据结构",
+    "title": "字典：名字对应值",
+    "code": "scores = {\"语文\": 90, \"数学\": 95}\nprint(scores[\"语文\"])",
+    "takeaway": "你学会了：字典用名字对应值，凭名字查内容。"
+  },
+  {
+    "id": "c5l4",
+    "chTitle": "第5章 数据结构",
+    "title": "元组、集合与二维列表",
+    "code": "point = (3, 4)\nfruits = {\"苹果\", \"苹果\", \"香蕉\"}\ngrid = [[1, 2], [3, 4]]\nprint(fruits)",
+    "takeaway": "你学会了：元组固定、集合去重、二维列表像表格。"
+  },
+  {
+    "id": "c5l5",
+    "chTitle": "第5章 数据结构",
+    "title": "列表推导式：一行造一排",
+    "code": "nums = [i for i in range(5)]\nprint(nums)\nevns = [i for i in range(10) if i % 2 == 0]\nprint(\"偶数：\", evns)",
+    "takeaway": "你学会了：用 [x for x in ...] 一行造列表，加 if 还能筛选。"
+  },
+  {
+    "id": "c6l1",
+    "chTitle": "第6章 函数与模块",
+    "title": "自定义函数 def",
+    "code": "def add(a, b):\n    return a + b\nprint(add(3, 4))\nprint(add(10, 20))",
+    "takeaway": "你学会了：用 def 做函数，参数收原料、return 吐成品。"
+  },
+  {
+    "id": "c6l2",
+    "chTitle": "第6章 函数与模块",
+    "title": "模块：拿来就用的工具箱",
+    "code": "import math\nprint(math.sqrt(16))\nimport random\nprint(\"掷骰子：\", random.randint(1, 6))",
+    "takeaway": "你学会了：用 import 把现成模块（如 math、random）搬来用。"
+  },
+  {
+    "id": "c6l3",
+    "chTitle": "第6章 函数与模块",
+    "title": "函数的妙用",
+    "code": "def greet(name=\"小朋友\"):\n    print(\"你好，\" + name)\ngreet()\ngreet(\"小光\")",
+    "takeaway": "你学会了：函数能带多个参数，还能设默认值。"
+  },
+  {
+    "id": "c6l4",
+    "chTitle": "第6章 函数与模块",
+    "title": "lambda：不用起名的小函数",
+    "code": "square = lambda x: x * x\ndouble = lambda x: x + x\nprint(\"5的平方：\", square(5))\nprint(\"3的两倍：\", double(3))",
+    "takeaway": "你学会了：用 lambda 一行写匿名小函数，适合临时的小计算。"
+  },
+  {
+    "id": "c7l1",
+    "chTitle": "第7章 文件与异常",
+    "title": "文件：电脑里的小本本",
+    "code": "notebook = \"今天学了 Python\"\nprint(\"我记下了：\", notebook)\nprint(\"复习一下：\", notebook)",
+    "takeaway": "你学会了：用 open 读写文件，把内容长久保存。"
+  },
+  {
+    "id": "c7l2",
+    "chTitle": "第7章 文件与异常",
+    "title": "异常：程序摔跤了怎么办",
+    "code": "try:\n    print(1 / 0)\nexcept:\n    print(\"出错啦，但程序继续跑\")",
+    "takeaway": "你学会了：用 try-except 接住错误，程序不崩。"
+  },
+  {
+    "id": "c7l3",
+    "chTitle": "第7章 文件与异常",
+    "title": "JSON：电脑的便签条",
+    "code": "import json\nd = {\"name\": \"Xiaoguang\", \"age\": 7}\ntxt = json.dumps(d)\nprint(\"存成便签:\", txt)\nback = json.loads(txt)\nprint(\"读回来:\", back[\"name\"])",
+    "takeaway": "你学会了：JSON 是通用的数据便签格式，用 json.dumps/loads 互相转换。"
+  },
+  {
+    "id": "c8l1",
+    "chTitle": "第8章 算法启蒙",
+    "title": "查找：怎么快速找到它",
+    "code": "nums = [1, 3, 5, 7, 9]\nfor n in nums:\n    if n == 7:\n        print(\"找到 7 啦\")\nprint(\"二分：每次砍掉一半，几下就找到\")",
+    "takeaway": "你学会了：顺序查找一个个看，二分查找每次砍一半更快。"
+  },
+  {
+    "id": "c8l2",
+    "chTitle": "第8章 算法启蒙",
+    "title": "排序：让队伍排整齐",
+    "code": "a = [5, 2, 8, 1]\na.sort()\nprint(a)",
+    "takeaway": "你学会了：排序让数据排整齐，冒泡排序相邻比一比。"
+  },
+  {
+    "id": "c9l1",
+    "chTitle": "第9章 项目与递归",
+    "title": "综合小项目：猜数字",
+    "code": "import random\nanswer = random.randint(1, 10)\nprint(\"我想了 1 到 10 的数，猜猜看！\")\nguesses = [5, 8, 3, answer]   # 模拟你猜的几次\nfor g in guesses:\n    if g == answer:\n        print(g, \"→ 猜中啦🎉\")\n    elif g > answer:\n        print(g, \"→ 太大了\")\n    else:\n        print(g, \"→ 太小了\")",
+    "takeaway": "你学会了：把变量、随机、循环、判断串起来，做出能跑的猜数字小游戏。"
+  },
+  {
+    "id": "c9l2",
+    "chTitle": "第9章 项目与递归",
+    "title": "递归：自己调用自己",
+    "code": "def count(n):\n    if n == 0:\n        return\n    print(n)\n    count(n - 1)\ncount(3)",
+    "takeaway": "你学会了：递归是函数自己调用自己，缩小到最小就停。"
+  },
+  {
+    "id": "c10l1",
+    "chTitle": "第10章 对象与游戏",
+    "title": "类与对象",
+    "code": "class Cat:\n    def __init__(self, name):\n        self.name = name\n    def meow(self):\n        print(self.name + \"：喵\")\nm = Cat(\"咪咪\")\nm.meow()",
+    "takeaway": "你学会了：类像蓝图，对象是照蓝图造出来的具体实例。"
+  },
+  {
+    "id": "c10l2",
+    "chTitle": "第10章 对象与游戏",
+    "title": "做自己的小游戏窗口",
+    "code": "score = 0\nprint(\"游戏开始！答对一题 +1 分\")\nscore = score + 1\nprint(\"现在得分：\", score)",
+    "takeaway": "你学会了：用 tkinter 能做带窗口的小游戏，先理解代码逻辑。"
+  },
+  {
+    "id": "c10l3",
+    "chTitle": "第10章 对象与游戏",
+    "title": "继承：照蓝图改出新蓝图",
+    "code": "class Cat:\n    def __init__(self, name):\n        self.name = name\nclass Hunter(Cat):\n    def catch(self):\n        print(self.name + \" 抓到老鼠啦\")\nm = Hunter(\"咪咪\")\nm.catch()",
+    "takeaway": "你学会了：用 class 子类(父类) 继承旧本领并扩展新功能。"
+  },
+  {
+    "id": "c11l1",
+    "chTitle": "第11章 数据与AI",
+    "title": "画图与 AI 初探",
+    "code": "data = [4, 7, 5, 9]\nfor i, d in enumerate(data):\n    print(\"第\" + str(i+1) + \"天 \" + \"█\" * d)",
+    "takeaway": "你学会了：把数字画成图看规律，AI 是让电脑从数据里学本领。"
+  },
+  {
+    "id": "c12l2",
+    "chTitle": "第12章 嵌套循环",
+    "title": "嵌套循环：打印图案",
+    "code": "for i in range(1, 5):\n    line = \"\"\n    for j in range(i):\n        line = line + \"⭐\"\n    print(line)",
+    "takeaway": "你学会了：循环里面再套一个循环，就能打印出三角形这样的图案。"
+  },
+  {
+    "id": "c13l2",
+    "chTitle": "第13章 趣味小项目",
+    "title": "小项目：九九乘法表",
+    "code": "for i in range(1, 4):\n    line = \"\"\n    for j in range(1, 4):\n        line = line + str(i) + \"×\" + str(j) + \"=\" + str(i*j) + \"  \"\n    print(line)",
+    "takeaway": "你学会了：用嵌套循环，电脑能帮我们一口气打印出乘法表。"
+  },
+  {
+    "id": "c13l3",
+    "chTitle": "第13章 趣味小项目",
+    "title": "小项目：我的计算器",
+    "code": "def add(a, b):\n    return a + b\ndef sub(a, b):\n    return a - b\nprint(\"3+4=\", add(3,4))\nprint(\"9-5=\", sub(9,5))",
+    "takeaway": "你学会了：把计算写成函数，想用就调用，干净又省力。"
+  },
+  {
+    "id": "c13l4",
+    "chTitle": "第13章 趣味小项目",
+    "title": "小项目：我的单词本",
+    "code": "words = [\"apple\",\"cat\",\"dog\",\"sun\"]\nprint(\"我要背\", len(words), \"个单词：\")\nfor w in words:\n    print(\"🔤 \" + w)\nprint(\"背完啦，真棒！\")",
+    "takeaway": "你学会了：用列表存单词、用循环逐个念，做了一个自己的单词本。"
+  }
+]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>课程代码自测 · Skulpt</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:880px;margin:0 auto;padding:20px;background:#fafafa;color:#222}
+  h1{font-size:20px;margin:0 0 6px}
+  p{color:#555;font-size:14px}
+  button{font-size:15px;padding:9px 18px;border:0;border-radius:8px;background:#2a7;color:#fff;cursor:pointer}
+  #summary{margin:14px 0;font-weight:700}
+  .item{margin:10px 0;border:1px solid #e2e2e2;border-radius:8px;overflow:hidden;background:#fff}
+  .head{padding:8px 12px;font-weight:600;font-size:14px}
+  .ok .head{background:#e8f7ee;color:#1a7}
+  .bad .head{background:#fdecec;color:#c33}
+  pre{margin:0;padding:8px 12px;background:#f6f6f6;max-height:150px;overflow:auto;white-space:pre-wrap;font-size:13px}
+</style>
+</head>
+<body>
+<h1>🧪 课程代码自测（Skulpt 引擎）</h1>
+<p>双击本文件用浏览器打开即可（纯本地、无需服务器）。点按钮后会逐课运行 <code>code</code> 字段里的 Python，列出每课 ✅/❌ 结果与输出。</p>
+<button onclick="runAll()">▶ 运行全部课程代码</button>
+<div id="summary"></div>
+<div id="result"></div>
+
+<script src="../data/course.js"></script>
+<script src="../vendor/skulpt/skulpt.min.js"></script>
+<script src="../vendor/skulpt/skulpt-stdlib.js"></script>
+<script>
+function escapeHtml(s){return (s||"").replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+function prepareInput(code){return code.replace(/input\s*\(([^)]*)\)/g,function(m,arg){var p='';arg=(arg||'').trim();if(arg){var c0=arg.charAt(0);if((c0==='"'||c0==="'")&&arg.charAt(arg.length-1)===c0)p=arg.slice(1,-1);}var v='';try{v=window.prompt(p||'请输入：')||'';}catch(e){v='';}return JSON.stringify(v);});}
+function runOne(code){return new Promise(function(res){
+  var out="";
+  code=prepareInput(code);
+  Sk.configure({output:function(t){out+=t;}, read:function(f){if(Sk.builtinFiles&&Sk.builtinFiles.files[f]!==undefined)return Sk.builtinFiles.files[f]; throw new Error("找不到模块: "+f);}, inputfun:function(){return Promise.resolve("5");}, inputfunTakesPrompt:true, __future__:undefined});
+  try{
+    Sk.importMainWithBody("<stdin>",false,code);
+  }catch(e){}
+  var failed=/Traceback|Error:|SyntaxError/.test(out);
+  res({ok:!failed,out:out});
+});}
+async function runAll(){
+  var data=window.COURSE_DATA; if(!data){alert("课程数据未加载");return;}
+  var res=document.getElementById("result"); res.innerHTML="运行中…";
+  var pass=0, fail=0, html="";
+  for(var ci=0;ci<data.chapters.length;ci++){
+    var ch=data.chapters[ci];
+    for(var li=0;li<ch.lessons.length;li++){
+      var les=ch.lessons[li];
+      if(!les.code)continue;
+      var r=await runOne(les.code);
+      if(r.ok){pass++; html+='<div class="item ok"><div class="head">✅ '+les.id+' · '+les.title+'</div><pre>'+escapeHtml(r.out)+'</pre></div>';}
+      else{fail++; html+='<div class="item bad"><div class="head">❌ '+les.id+' · '+les.title+'</div><pre>'+escapeHtml(r.out)+'</pre></div>';}
+    }
+  }
+  document.getElementById("summary").textContent="通过 "+pass+" 段 ｜ 失败 "+fail+" 段";
+  res.innerHTML=html;
+}
+</script>
+</body>
+</html>
